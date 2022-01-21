@@ -17,7 +17,7 @@
 python data_preprocess.py
 ```
 处理过程有点慢，可能需要几十分钟。
-可以直接下载使用已经预处理好的数据，已处理数据可点击[此处下载](https://pan.baidu.com/s/1WPwlA7okKKmzsnZzzWv-yQ?pwd=82rz)，解压后也放在data文件夹下
+可以跳过数据预处理步骤，直接下载使用已经预处理好的数据，已处理数据可点击[此处下载](https://pan.baidu.com/s/1WPwlA7okKKmzsnZzzWv-yQ?pwd=82rz)，解压后也放在data文件夹下
 ```
 /data
 |--Electronics_5.json # 原始未处理数据，可以不用，直接使用下面两个已处理好的数据
