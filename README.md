@@ -1,6 +1,6 @@
 # 基于Paddle实现《NRPA: Neural Recommendation with Personalized Attention》
 ## 模型简介
-该模型包含三个部分：User-Net、Item-Net和评分预测模块，User-Net和Item-Net具有的组成，分别用来学习user和item的嵌入。
+该模型包含三个部分：User-Net、Item-Net和评分预测模块，User-Net和Item-Net具有的组成，分别用来学习user和item的嵌入，评分预测模块根据user embedding和item embedding预测user对item 的评分。
 
 ## 环境
 + python==3.8
