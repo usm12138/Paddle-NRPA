@@ -68,10 +68,10 @@ def generate_ui2texts(dataset):
             item_reviews[x['item_id']] = [x['review']]
     return user_reviews, item_reviews
 
-def main():
-    # fpath = './data/Electronics_5.json'
-    # data = read_data(fpath)
-    data = pickle.load(open('./data/data_clean.pkl', 'rb'))
+def main(fpath):
+#     fpath = './data/Electronics_5.json'
+    data = read_data(fpath)
+#     data = pickle.load(open('./data/data_clean.pkl', 'rb'))
     vocab_dict, freqs = build_vocab(data['reviews'], descend=True) # 生成字典
     vocab = Vocab(vocab_dict, freq_words=freqs, unk_token='<unk>', pad_token='<pad>') # 初始化字典
     tokenizer = Tokenizer(vocab) # 分词
@@ -84,6 +84,7 @@ def main():
     'u2texts': u2texts, 'i2texts': i2texts}
     pickle.dump(obj, open('./data/data.pkl', 'wb'))
 if __name__ == '__main__':
-    main()
+    fpath = './data/Electronics_5.json'
+    main(fpath)
 
 
