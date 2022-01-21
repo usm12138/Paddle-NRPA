@@ -1,0 +1,92 @@
+nohup: ignoring input
+W0119 12:47:48.350148 1310884 device_context.cc:447] Please NOTE: device: 1, GPU Compute Capability: 8.6, Driver API Version: 11.4, Runtime API Version: 11.0
+W0119 12:47:48.352911 1310884 device_context.cc:465] device: 1, cuDNN Version: 8.0.
+Loading and processing data..............
+user=============>
+最大序列长度:  97 最小序列长度:  0 序列长度的平均:  28.484522973983655 序列长度的中位数:  52
+最大序列数量:  159 最小序列数量:  1 序列长度的平均:  6.254982183626005 序列数量的中位数:  11
+item=============>
+最大序列长度:  97 最小序列长度:  0 序列长度的平均:  28.484522973983655 序列长度的中位数:  52
+最大序列数量:  4539 最小序列数量:  1 序列长度的平均:  18.794521645750187 序列数量的中位数:  35
+Loading and processing complete!!!!!!!!!!!
+Begin training.................
+step: 40 train mse_loss: 11.85736, time: 15.1868 s
+step: 80 train mse_loss: 1.48548, time: 13.1006 s
+step: 120 train mse_loss: 1.28653, time: 13.0396 s
+step: 160 train mse_loss: 1.25528, time: 15.0923 s
+step: 200 train mse_loss: 1.22017, time: 13.6335 s
+
+Validing and Testing...............
+valid mse_loss: 1.19929,  test mse_loss: 1.20837, time: 113.4806 s
+
+step: 240 train mse_loss: 1.19102, time: 13.2947 s
+step: 280 train mse_loss: 1.15445, time: 12.9612 s
+step: 320 train mse_loss: 1.11839, time: 12.9927 s
+step: 360 train mse_loss: 1.10976, time: 13.2139 s
+step: 400 train mse_loss: 1.12304, time: 13.3130 s
+
+Validing and Testing...............
+valid mse_loss: 1.09655,  test mse_loss: 1.10730, time: 120.0182 s
+
+step: 440 train mse_loss: 1.10093, time: 12.3664 s
+step: 480 train mse_loss: 1.10174, time: 13.0814 s
+step: 520 train mse_loss: 1.08974, time: 15.0117 s
+step: 560 train mse_loss: 1.06632, time: 13.1112 s
+step: 600 train mse_loss: 1.08375, time: 13.1064 s
+
+Validing and Testing...............
+valid mse_loss: 1.08745,  test mse_loss: 1.09369, time: 119.2279 s
+
+step: 640 train mse_loss: 1.09047, time: 11.7768 s
+step: 680 train mse_loss: 1.08382, time: 13.1380 s
+step: 720 train mse_loss: 1.08076, time: 12.8802 s
+step: 760 train mse_loss: 1.06695, time: 13.0524 s
+step: 800 train mse_loss: 1.04748, time: 13.2244 s
+
+Validing and Testing...............
+valid mse_loss: 1.05559,  test mse_loss: 1.06458, time: 114.4550 s
+
+step: 840 train mse_loss: 1.08370, time: 15.2222 s
+step: 880 train mse_loss: 1.04173, time: 13.4899 s
+step: 920 train mse_loss: 1.05257, time: 14.1756 s
+step: 960 train mse_loss: 0.94472, time: 12.7831 s
+step: 1000 train mse_loss: 0.92935, time: 13.9585 s
+
+Validing and Testing...............
+valid mse_loss: 1.09173,  test mse_loss: 1.10070, time: 113.1762 s
+
+step: 1040 train mse_loss: 0.93329, time: 12.6812 s
+step: 1080 train mse_loss: 0.93281, time: 13.3459 s
+step: 1120 train mse_loss: 0.93130, time: 13.2056 s
+step: 1160 train mse_loss: 0.94168, time: 14.5894 s
+step: 1200 train mse_loss: 0.95180, time: 13.3321 s
+
+Validing and Testing...............
+valid mse_loss: 1.06574,  test mse_loss: 1.07383, time: 115.5083 s
+
+step: 1240 train mse_loss: 0.96018, time: 13.0038 s
+step: 1280 train mse_loss: 0.93944, time: 13.5607 s
+step: 1320 train mse_loss: 0.95039, time: 13.0799 s
+step: 1360 train mse_loss: 0.92394, time: 12.7621 s
+step: 1400 train mse_loss: 0.96339, time: 13.1283 s
+
+Validing and Testing...............
+valid mse_loss: 1.04748,  test mse_loss: 1.05596, time: 115.0965 s
+
+step: 1440 train mse_loss: 0.94309, time: 12.4570 s
+step: 1480 train mse_loss: 0.93621, time: 12.6679 s
+step: 1520 train mse_loss: 0.94401, time: 15.5520 s
+step: 1560 train mse_loss: 0.96166, time: 13.3231 s
+step: 1600 train mse_loss: 0.95926, time: 12.7999 s
+
+Validing and Testing...............
+valid mse_loss: 1.02980,  test mse_loss: 1.03738, time: 115.1671 s
+
+step: 1640 train mse_loss: 0.94587, time: 11.5985 s
+step: 1680 train mse_loss: 0.94671, time: 13.4818 s
+step: 1720 train mse_loss: 0.93811, time: 13.4328 s
+step: 1760 train mse_loss: 0.93927, time: 12.6203 s
+step: 1800 train mse_loss: 0.94655, time: 15.0630 s
+
+Validing and Testing...............
+valid mse_loss: 1.04182,  test mse_loss: 1.04946, time: 112.5238 s
