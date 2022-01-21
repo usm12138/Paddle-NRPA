@@ -11,13 +11,13 @@
 + contractions
 + numpy
 ## 数据准备
-原始数据Amazon：Electronics 从官网下载，已下载并上传云盘，可以在[此处下载](https://pan.baidu.com/s/1f0cdwevw1JMssBEOyChXCA?pwd=7s2i)，放置在data文件夹下
+原始数据Amazon：Electronics 从官网下载，已下载并上传云盘，百度云盘在[此处下载](https://pan.baidu.com/s/1f0cdwevw1JMssBEOyChXCA?pwd=7s2i)，谷歌云盘点击[此处下载](https://drive.google.com/file/d/1yeIM2ot0saHn8XbK_1q2iJzNYtnPgPa9/view?usp=sharing)，放置在data文件夹下
 然后运行以下命令进行数据预处理
 ```
 python data_preprocess.py
 ```
 处理过程有点慢，可能需要几十分钟。
-可以跳过数据预处理步骤，直接下载使用已经预处理好的数据，已处理数据可点击[此处下载](https://pan.baidu.com/s/1WPwlA7okKKmzsnZzzWv-yQ?pwd=82rz)，解压后也放在data文件夹下
+可以跳过数据预处理步骤，直接下载使用已经预处理好的数据，百度网盘点击[此处下载](https://pan.baidu.com/s/1WPwlA7okKKmzsnZzzWv-yQ?pwd=82rz)，谷歌云点击[此处下载](https://drive.google.com/file/d/1wmgFOi8hC56Qdv3lvflfQ0kbV_A3ERJn/view?usp=sharing)，解压后也放在data文件夹下
 ```
 /data
 |--Electronics_5.json # 原始未处理数据，可以不用，直接使用下面两个已处理好的数据
