@@ -40,8 +40,10 @@ Validing and Testing...............
 valid mse_loss: 1.02980,  test mse_loss: 1.03738, time: 115.1671 s
 ```
 >可以直接使用已经训练好的模型直接进行测试，可以点击[此处下载](https://drive.google.com/file/d/1jGOp_WsY5NN3QAu3zVivNKJauelFIMMa/view?usp=sharing)，解压至model 文件夹下
+```
 /model
 |--model.pdparams
+```
 运行命令
 ```
 python test.py
