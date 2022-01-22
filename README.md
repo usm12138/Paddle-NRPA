@@ -11,8 +11,8 @@
 + contractions
 + numpy
 ## 数据准备
-原始数据Amazon：Electronics 从官网下载，已下载并上传云盘，百度云盘在[此处下载](https://pan.baidu.com/s/1f0cdwevw1JMssBEOyChXCA?pwd=7s2i)，谷歌云盘点击[此处下载](https://drive.google.com/file/d/1yeIM2ot0saHn8XbK_1q2iJzNYtnPgPa9/view?usp=sharing)，放置在data文件夹下
-然后运行以下命令进行数据预处理
+>原始数据Amazon：Electronics 从官网下载，已下载并上传云盘，百度云盘在[此处下载](https://pan.baidu.com/s/1f0cdwevw1JMssBEOyChXCA?pwd=7s2i)，谷歌云盘点击[此处下载](https://drive.google.com/file/d/1yeIM2ot0saHn8XbK_1q2iJzNYtnPgPa9/view?usp=sharing)，放置在data文件夹下。
+>然后运行以下命令进行数据预处理
 ```
 python data_preprocess.py
 ```
@@ -39,9 +39,22 @@ step: 1600 train mse_loss: 0.95926, time: 12.7999 s
 Validing and Testing...............
 valid mse_loss: 1.02980,  test mse_loss: 1.03738, time: 115.1671 s
 ```
+>可以直接使用已经训练好的模型直接进行测试，可以点击[此处下载](https://drive.google.com/file/d/1jGOp_WsY5NN3QAu3zVivNKJauelFIMMa/view?usp=sharing)，解压至model 文件夹下
+/model
+|--model.pdparams
+运行命令
+```
+python test.py
+```
+
+测试结果如下所示：
+```
+Testing..............
+test mse_loss: 1.00945, time: 86.9659 s
+```
 ## 复现效果
-论文结果： Amazon-Electronics: MSE 1.047
-复现结果： 1.037
+>论文结果： Amazon-Electronics: MSE 1.047
+>复现结果： 1.037
 
 ## 参考
 * https://medium.com/geekculture/data-preprocessing-and-eda-for-natural-language-processing-56e45c1df36d
