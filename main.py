@@ -93,6 +93,8 @@ def main(args):
     obj = {'model': model.state_dict(), 'opt': optimizer.state_dict()}
     paddle.save(obj, os.path.join(args.data_dir, 'model.pdparams'))
     step, loss_tot, min_loss = 0, 0., 9999
+    cnt = 3 #
+    t_loss = [0.]
     t0 = time.time()
     print('Begin training.................')
     for epoch in range(args.epoch):
@@ -121,8 +123,14 @@ def main(args):
                 loss_test = eval(model, test_data_loader)
                 print('valid mse_loss: {:.5f},  test mse_loss: {:.5f}, time: {:.4f} s'.format(loss_valid, loss_test, time.time() - t1))
                 print()
-                # if loss_valid < min_loss:
-                #     paddle.save()
+                if loss_valid < min_loss:
+                    paddle.save(model.state_dict(), os.path.join(args.model_dir, 'model.pdparams'))
+                    min_loss = loss_valid
+                if loss_valid > max(t_loss[-4: ]): 
+                    cnt = cnt - 1
+                t_loss.append(loss_valid)
+                if cnt <= 0:    #早停
+                    break
                 t0 = time.time()
             step += 1
 
